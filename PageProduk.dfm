@@ -1,8 +1,8 @@
 object Form5: TForm5
-  Left = 213
-  Top = 180
-  Width = 1299
-  Height = 713
+  Left = 186
+  Top = 112
+  Width = 1325
+  Height = 763
   Caption = 'Form Produk'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -159,7 +159,7 @@ object Form5: TForm5
         ParentFont = False
       end
     end
-    object Edt4: TEdit
+    object EdtKodebarang: TEdit
       Left = 336
       Top = 136
       Width = 497
@@ -172,7 +172,7 @@ object Form5: TForm5
       ParentFont = False
       TabOrder = 1
     end
-    object Edt7: TEdit
+    object EdtNamabarang: TEdit
       Left = 336
       Top = 168
       Width = 497
@@ -203,6 +203,7 @@ object Form5: TForm5
       TitleFont.Height = -17
       TitleFont.Name = 'Vastago Grotesk'
       TitleFont.Style = []
+      OnCellClick = DBGrid2CellClick
       Columns = <
         item
           Expanded = False
@@ -225,7 +226,7 @@ object Form5: TForm5
           Visible = True
         end>
     end
-    object Edt3: TEdit
+    object EdtKeterangan: TEdit
       Left = 336
       Top = 232
       Width = 497
@@ -238,7 +239,7 @@ object Form5: TForm5
       ParentFont = False
       TabOrder = 4
     end
-    object Edt5: TEdit
+    object EdtHarga: TEdit
       Left = 336
       Top = 200
       Width = 497
@@ -264,6 +265,7 @@ object Form5: TForm5
       Font.Style = []
       ParentFont = False
       TabOrder = 6
+      OnClick = btn1Click
     end
     object btn2: TButton
       Left = 304
@@ -278,6 +280,7 @@ object Form5: TForm5
       Font.Style = []
       ParentFont = False
       TabOrder = 7
+      OnClick = btn2Click
     end
     object btn3: TButton
       Left = 488
@@ -292,6 +295,7 @@ object Form5: TForm5
       Font.Style = []
       ParentFont = False
       TabOrder = 8
+      OnClick = btn3Click
     end
     object btn4: TButton
       Left = 672
@@ -306,6 +310,7 @@ object Form5: TForm5
       Font.Style = []
       ParentFont = False
       TabOrder = 9
+      OnClick = btn4Click
     end
   end
   object ZQuery1: TZQuery
