@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 147
-  Top = 118
+  Left = 131
+  Top = 148
   Width = 1302
   Height = 712
   Caption = 'Form Service'
@@ -212,7 +212,7 @@ object Form3: TForm3
         ParentFont = False
       end
     end
-    object Edt1: TEdit
+    object EdtNamapelanggan: TEdit
       Left = 328
       Top = 128
       Width = 377
@@ -225,7 +225,7 @@ object Form3: TForm3
       ParentFont = False
       TabOrder = 1
     end
-    object Edt2: TEdit
+    object EdtNotelepon: TEdit
       Left = 328
       Top = 160
       Width = 377
@@ -238,7 +238,7 @@ object Form3: TForm3
       ParentFont = False
       TabOrder = 2
     end
-    object Edt4: TEdit
+    object EdtNamabarang: TEdit
       Left = 328
       Top = 248
       Width = 377
@@ -251,7 +251,7 @@ object Form3: TForm3
       ParentFont = False
       TabOrder = 3
     end
-    object dtp1: TDateTimePicker
+    object dtpService: TDateTimePicker
       Left = 328
       Top = 192
       Width = 377
@@ -266,19 +266,7 @@ object Form3: TForm3
       ParentFont = False
       TabOrder = 4
     end
-    object DBGrid2: TDBGrid
-      Left = 112
-      Top = 424
-      Width = 1057
-      Height = 169
-      TabOrder = 5
-      TitleFont.Charset = DEFAULT_CHARSET
-      TitleFont.Color = clWindowText
-      TitleFont.Height = -11
-      TitleFont.Name = 'Tahoma'
-      TitleFont.Style = []
-    end
-    object Edt3: TEdit
+    object EdtKeluhan: TEdit
       Left = 328
       Top = 312
       Width = 377
@@ -289,9 +277,9 @@ object Form3: TForm3
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 6
+      TabOrder = 5
     end
-    object Edt5: TEdit
+    object EdtKelengkapan: TEdit
       Left = 328
       Top = 280
       Width = 377
@@ -302,9 +290,9 @@ object Form3: TForm3
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 7
+      TabOrder = 6
     end
-    object Edt6: TEdit
+    object EdtHargaservice: TEdit
       Left = 328
       Top = 344
       Width = 377
@@ -315,7 +303,7 @@ object Form3: TForm3
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 8
+      TabOrder = 7
     end
     object btn1: TButton
       Left = 744
@@ -329,7 +317,8 @@ object Form3: TForm3
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 9
+      TabOrder = 8
+      OnClick = btn1Click
     end
     object btn2: TButton
       Left = 744
@@ -343,7 +332,8 @@ object Form3: TForm3
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 10
+      TabOrder = 9
+      OnClick = btn2Click
     end
     object btn3: TButton
       Left = 744
@@ -357,7 +347,8 @@ object Form3: TForm3
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 11
+      TabOrder = 10
+      OnClick = btn3Click
     end
     object btn4: TButton
       Left = 744
@@ -371,9 +362,10 @@ object Form3: TForm3
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 12
+      TabOrder = 11
+      OnClick = btn4Click
     end
-    object Cbb1: TComboBox
+    object CbbStatus: TComboBox
       Left = 328
       Top = 376
       Width = 377
@@ -385,7 +377,61 @@ object Form3: TForm3
       Font.Style = []
       ItemHeight = 21
       ParentFont = False
-      TabOrder = 13
+      TabOrder = 12
+      Items.Strings = (
+        'Diterima'
+        'Diproses'
+        'Selesai')
     end
+    object DBGrid1: TDBGrid
+      Left = 112
+      Top = 416
+      Width = 1049
+      Height = 233
+      DataSource = ds1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 13
+      TitleFont.Charset = ANSI_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -16
+      TitleFont.Name = 'Vastago Grotesk'
+      TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
+    end
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 1064
+    Top = 288
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'db_computershop'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 
+      'C:\Users\Asus\Documents\TUGAS SEMESTER 5\Pemrograman Visual 3\Tu' +
+      'gas\ComputerShop\libmysql.dll'
+    Left = 1064
+    Top = 176
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_service')
+    Params = <>
+    Left = 1064
+    Top = 232
   end
 end
