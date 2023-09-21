@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 146
-  Top = 117
+  Left = 180
+  Top = 99
   Width = 1301
   Height = 713
   Caption = 'Form Penjualan'
@@ -211,7 +211,7 @@ object Form2: TForm2
         ParentFont = False
       end
     end
-    object Edt1: TEdit
+    object EdtNamapelanggan: TEdit
       Left = 328
       Top = 128
       Width = 313
@@ -224,7 +224,7 @@ object Form2: TForm2
       ParentFont = False
       TabOrder = 1
     end
-    object Edt2: TEdit
+    object EdtNotelp: TEdit
       Left = 328
       Top = 160
       Width = 313
@@ -237,7 +237,7 @@ object Form2: TForm2
       ParentFont = False
       TabOrder = 2
     end
-    object Edt4: TEdit
+    object EdtKodebarang: TEdit
       Left = 328
       Top = 248
       Width = 313
@@ -250,7 +250,7 @@ object Form2: TForm2
       ParentFont = False
       TabOrder = 3
     end
-    object Edt5: TEdit
+    object EdtNamabarang: TEdit
       Left = 328
       Top = 280
       Width = 313
@@ -263,7 +263,7 @@ object Form2: TForm2
       ParentFont = False
       TabOrder = 4
     end
-    object Edt6: TEdit
+    object EdtQty: TEdit
       Left = 328
       Top = 312
       Width = 313
@@ -276,7 +276,7 @@ object Form2: TForm2
       ParentFont = False
       TabOrder = 5
     end
-    object Edt7: TEdit
+    object EdtTotalharga: TEdit
       Left = 328
       Top = 344
       Width = 313
@@ -292,16 +292,24 @@ object Form2: TForm2
     object DBGrid1: TDBGrid
       Left = 752
       Top = 160
-      Width = 409
+      Width = 417
       Height = 209
+      DataSource = ds2
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 7
-      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Charset = ANSI_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
-      TitleFont.Name = 'Tahoma'
+      TitleFont.Height = -15
+      TitleFont.Name = 'Vastago Grotesk'
       TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
     end
-    object dtp1: TDateTimePicker
+    object dtpPembelian: TDateTimePicker
       Left = 328
       Top = 192
       Width = 313
@@ -319,14 +327,79 @@ object Form2: TForm2
     object DBGrid2: TDBGrid
       Left = 112
       Top = 456
-      Width = 1057
+      Width = 1089
       Height = 233
+      DataSource = ds1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 9
-      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Charset = ANSI_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
-      TitleFont.Name = 'Tahoma'
+      TitleFont.Height = -15
+      TitleFont.Name = 'Vastago Grotesk'
       TitleFont.Style = []
+      OnCellClick = DBGrid2CellClick
+      Columns = <
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'id_penjualan'
+          Title.Alignment = taCenter
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'nama_pelanggan'
+          Title.Alignment = taCenter
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'no_telepon'
+          Title.Alignment = taCenter
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'tgl_pembelian'
+          Title.Alignment = taCenter
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'kode_barang'
+          Title.Alignment = taCenter
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'nama_barang'
+          Title.Alignment = taCenter
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'qty'
+          Title.Alignment = taCenter
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'total_harga'
+          Title.Alignment = taCenter
+          Visible = True
+        end>
     end
     object btn1: TButton
       Left = 112
@@ -341,6 +414,7 @@ object Form2: TForm2
       Font.Style = []
       ParentFont = False
       TabOrder = 10
+      OnClick = btn1Click
     end
     object btn2: TButton
       Left = 296
@@ -355,6 +429,7 @@ object Form2: TForm2
       Font.Style = []
       ParentFont = False
       TabOrder = 11
+      OnClick = btn2Click
     end
     object btn3: TButton
       Left = 480
@@ -369,6 +444,7 @@ object Form2: TForm2
       Font.Style = []
       ParentFont = False
       TabOrder = 12
+      OnClick = btn3Click
     end
     object btn4: TButton
       Left = 664
@@ -383,6 +459,80 @@ object Form2: TForm2
       Font.Style = []
       ParentFont = False
       TabOrder = 13
+      OnClick = btn4Click
     end
+    object EdtHarga: TEdit
+      Left = 896
+      Top = 80
+      Width = 225
+      Height = 29
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 14
+      Visible = False
+    end
+    object btn5: TButton
+      Left = 848
+      Top = 392
+      Width = 193
+      Height = 49
+      Caption = 'HITUNG TOTAL HARGA'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 15
+      OnClick = btn5Click
+    end
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'db_computershop'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 
+      'C:\Users\Asus\Documents\TUGAS SEMESTER 5\Pemrograman Visual 3\Tu' +
+      'gas\ComputerShop\libmysql.dll'
+    Left = 712
+    Top = 16
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_penjualan')
+    Params = <>
+    Left = 1208
+    Top = 496
+  end
+  object ZQuery2: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_produk')
+    Params = <>
+    Left = 1184
+    Top = 184
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 1216
+    Top = 552
+  end
+  object ds2: TDataSource
+    DataSet = ZQuery2
+    Left = 1184
+    Top = 240
   end
 end

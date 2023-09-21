@@ -446,6 +446,7 @@ object Form4: TForm4
       Font.Style = []
       ParentFont = False
       TabOrder = 13
+      Visible = False
     end
     object EdtKoderakit: TEdit
       Left = 288
