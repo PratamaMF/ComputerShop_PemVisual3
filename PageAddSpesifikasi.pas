@@ -65,11 +65,11 @@ end;
 procedure TForm8.btn2Click(Sender: TObject);
 begin
   ZQuery1.SQL.Clear;
-  ZQuery1.SQL.Add('update tb_service set kode_rakit="'+EdtKoderakit.Text+'",harga="'+EdtHarga.Text+'",spesifikasi="'+EdtSpesifikasi.Text+'" where id_spesifikasi="'+id+'"');
+  ZQuery1.SQL.Add('update tb_spesifikasi set kode_rakit="'+EdtKoderakit.Text+'",harga="'+EdtHarga.Text+'",spesifikasi="'+EdtSpesifikasi.Text+'" where id_spesifikasi="'+id+'"');
   ZQuery1.ExecSQL;
 
   ZQuery1.SQL.Clear;
-  ZQuery1.SQL.Add('select * from tb_service');
+  ZQuery1.SQL.Add('select * from tb_spesifikasi');
   ZQuery1.Open;
   Showmessage('DATA BERHASIL DI EDIT');
 end;

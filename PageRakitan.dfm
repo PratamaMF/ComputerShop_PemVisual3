@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 146
-  Top = 117
+  Left = 147
+  Top = 134
   Width = 1303
   Height = 714
   Caption = 'Form Rakitan'
@@ -18,7 +18,6 @@ object Form4: TForm4
     Top = 0
     Width = 1273
     Height = 657
-    Caption = '0'
     Color = clWhite
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -120,23 +119,10 @@ object Form4: TForm4
     end
     object l_13: TLabel
       Left = 72
-      Top = 312
+      Top = 296
       Width = 193
       Height = 21
       Caption = 'Status                                   :'
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Vastago Grotesk'
-      Font.Style = []
-      ParentFont = False
-    end
-    object l_14: TLabel
-      Left = 72
-      Top = 248
-      Width = 192
-      Height = 21
-      Caption = 'Kode Rakit                           :'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -159,10 +145,23 @@ object Form4: TForm4
     end
     object l_15: TLabel
       Left = 72
-      Top = 280
+      Top = 264
       Width = 190
       Height = 21
       Caption = 'Harga Total                         :'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
+    end
+    object l_10: TLabel
+      Left = 72
+      Top = 232
+      Width = 184
+      Height = 21
+      Caption = 'Kode Rakit                         :'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -205,7 +204,7 @@ object Form4: TForm4
         ParentFont = False
       end
     end
-    object Edt1: TEdit
+    object EdtNamapelanggan: TEdit
       Left = 288
       Top = 128
       Width = 377
@@ -218,7 +217,7 @@ object Form4: TForm4
       ParentFont = False
       TabOrder = 1
     end
-    object Edt2: TEdit
+    object EdtNotelp: TEdit
       Left = 288
       Top = 160
       Width = 377
@@ -231,7 +230,7 @@ object Form4: TForm4
       ParentFont = False
       TabOrder = 2
     end
-    object dtp1: TDateTimePicker
+    object dtpRakit: TDateTimePicker
       Left = 288
       Top = 192
       Width = 377
@@ -251,24 +250,69 @@ object Form4: TForm4
       Top = 456
       Width = 1129
       Height = 209
+      DataSource = ds1
       TabOrder = 4
       TitleFont.Charset = ANSI_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -16
       TitleFont.Name = 'Vastago Grotesk'
       TitleFont.Style = []
+      OnCellClick = DBGrid2CellClick
+      Columns = <
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'nama_pelanggan'
+          Title.Alignment = taCenter
+          Width = 200
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'no_telepon'
+          Title.Alignment = taCenter
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'tgl_rakitan'
+          Title.Alignment = taCenter
+          Width = 110
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'status'
+          Title.Alignment = taCenter
+          Width = 280
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'id_spesifikasi'
+          Title.Alignment = taCenter
+          Visible = True
+        end>
     end
-    object Cbb1: TComboBox
+    object CbbStatus: TComboBox
       Left = 288
-      Top = 312
+      Top = 296
       Width = 377
       Height = 29
       ItemHeight = 21
       TabOrder = 5
+      Items.Strings = (
+        'Melengkapi Komponen'
+        'Proses Perakitan'
+        'Selesai Perakitan')
     end
-    object Edt3: TEdit
+    object EdtHarga: TEdit
       Left = 288
-      Top = 280
+      Top = 264
       Width = 377
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -278,7 +322,6 @@ object Form4: TForm4
       Font.Style = []
       ParentFont = False
       TabOrder = 6
-      Text = 'v'
     end
     object btn1: TButton
       Left = 72
@@ -293,6 +336,7 @@ object Form4: TForm4
       Font.Style = []
       ParentFont = False
       TabOrder = 7
+      OnClick = btn1Click
     end
     object btn2: TButton
       Left = 256
@@ -307,6 +351,7 @@ object Form4: TForm4
       Font.Style = []
       ParentFont = False
       TabOrder = 8
+      OnClick = btn2Click
     end
     object btn3: TButton
       Left = 440
@@ -321,6 +366,7 @@ object Form4: TForm4
       Font.Style = []
       ParentFont = False
       TabOrder = 9
+      OnClick = btn3Click
     end
     object btn4: TButton
       Left = 624
@@ -335,18 +381,49 @@ object Form4: TForm4
       Font.Style = []
       ParentFont = False
       TabOrder = 10
+      OnClick = btn4Click
     end
     object DBGrid1: TDBGrid
       Left = 696
       Top = 152
       Width = 529
       Height = 185
+      DataSource = ds2
       TabOrder = 11
       TitleFont.Charset = ANSI_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -16
       TitleFont.Name = 'Vastago Grotesk'
       TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
+      Columns = <
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'id_spesifikasi'
+          Title.Alignment = taCenter
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'kode_rakit'
+          Title.Alignment = taCenter
+          Visible = True
+        end
+        item
+          Alignment = taCenter
+          Expanded = False
+          FieldName = 'harga'
+          Title.Alignment = taCenter
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'spesifikasi'
+          Title.Alignment = taCenter
+          Visible = True
+        end>
     end
     object btn5: TButton
       Left = 808
@@ -357,9 +434,9 @@ object Form4: TForm4
       TabOrder = 12
       OnClick = btn5Click
     end
-    object Edt4: TEdit
-      Left = 288
-      Top = 240
+    object EdtIdSpesifikasi: TEdit
+      Left = 792
+      Top = 344
       Width = 377
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -370,5 +447,62 @@ object Form4: TForm4
       ParentFont = False
       TabOrder = 13
     end
+    object EdtKoderakit: TEdit
+      Left = 288
+      Top = 232
+      Width = 377
+      Height = 29
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 14
+    end
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'db_computershop'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 
+      'C:\Users\Asus\Documents\TUGAS SEMESTER 5\Pemrograman Visual 3\Tu' +
+      'gas\ComputerShop\libmysql.dll'
+    Left = 704
+    Top = 16
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_rakitan')
+    Params = <>
+    Left = 912
+    Top = 72
+  end
+  object ZQuery2: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_spesifikasi')
+    Params = <>
+    Left = 1096
+    Top = 72
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 968
+    Top = 72
+  end
+  object ds2: TDataSource
+    DataSet = ZQuery2
+    Left = 1144
+    Top = 72
   end
 end
