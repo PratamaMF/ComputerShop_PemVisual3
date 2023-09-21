@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 145
-  Top = 115
+  Left = 152
+  Top = 136
   Width = 1303
   Height = 716
   Caption = 'Form Laporan'
@@ -181,7 +181,7 @@ object Form6: TForm6
       Left = 144
       Top = 216
       Width = 177
-      Height = 185
+      Height = 153
       Caption = 'Penjualan'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -194,7 +194,7 @@ object Form6: TForm6
         Left = 0
         Top = 0
         Width = 177
-        Height = 185
+        Height = 153
         Caption = ' Penjualan'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -209,7 +209,7 @@ object Form6: TForm6
       Left = 344
       Top = 216
       Width = 177
-      Height = 185
+      Height = 153
       Caption = ' Service'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -223,7 +223,7 @@ object Form6: TForm6
       Left = 544
       Top = 216
       Width = 177
-      Height = 185
+      Height = 153
       Caption = ' Rakitan'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -237,7 +237,7 @@ object Form6: TForm6
       Left = 744
       Top = 216
       Width = 177
-      Height = 185
+      Height = 153
       Caption = ' Produk'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -251,7 +251,7 @@ object Form6: TForm6
       Left = 944
       Top = 216
       Width = 177
-      Height = 185
+      Height = 153
       Caption = '  User'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -261,5 +261,170 @@ object Form6: TForm6
       ParentFont = False
       TabOrder = 10
     end
+  end
+  object frxReport1: TfrxReport
+    Version = '4.12.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45190.979928518520000000
+    ReportOptions.LastChange = 45190.979928518520000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 208
+    Top = 240
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+  object frxReport2: TfrxReport
+    Version = '4.12.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45190.980018703700000000
+    ReportOptions.LastChange = 45190.980018703700000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 408
+    Top = 240
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+  object frxReport3: TfrxReport
+    Version = '4.12.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45190.980197175920000000
+    ReportOptions.LastChange = 45190.980197175920000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 608
+    Top = 240
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+  object frxReport4: TfrxReport
+    Version = '4.12.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45190.980261377310000000
+    ReportOptions.LastChange = 45190.980261377310000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 808
+    Top = 240
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+  object frxReport5: TfrxReport
+    Version = '4.12.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45190.980315868060000000
+    ReportOptions.LastChange = 45190.980315868060000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 1008
+    Top = 240
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+  object frxDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    BCDToCurrency = False
+    Left = 264
+    Top = 304
+  end
+  object frxDataset2: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    BCDToCurrency = False
+    Left = 464
+    Top = 304
+  end
+  object frxDataset3: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    BCDToCurrency = False
+    Left = 664
+    Top = 304
+  end
+  object frxDataset4: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    BCDToCurrency = False
+    Left = 864
+    Top = 304
+  end
+  object frxDataset5: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    BCDToCurrency = False
+    Left = 1064
+    Top = 304
+  end
+  object ZQuery1: TZQuery
+    Params = <>
+    Left = 160
+    Top = 304
+  end
+  object ZQuery2: TZQuery
+    Params = <>
+    Left = 360
+    Top = 304
+  end
+  object ZQuery3: TZQuery
+    Params = <>
+    Left = 560
+    Top = 304
+  end
+  object ZQuery4: TZQuery
+    Params = <>
+    Left = 760
+    Top = 304
+  end
+  object ZQuery5: TZQuery
+    Params = <>
+    Left = 960
+    Top = 304
   end
 end

@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ExtCtrls;
+  Dialogs, StdCtrls, ExtCtrls, DB, ZAbstractRODataset, ZAbstractDataset,
+  ZDataset, frxClass, frxDBSet;
 
 type
   TForm6 = class(TForm)
@@ -27,6 +28,21 @@ type
     grp4: TGroupBox;
     grp5: TGroupBox;
     grp6: TGroupBox;
+    frxReport1: TfrxReport;
+    frxReport2: TfrxReport;
+    frxReport3: TfrxReport;
+    frxReport4: TfrxReport;
+    frxReport5: TfrxReport;
+    frxDataset1: TfrxDBDataset;
+    frxDataset2: TfrxDBDataset;
+    frxDataset3: TfrxDBDataset;
+    frxDataset4: TfrxDBDataset;
+    frxDataset5: TfrxDBDataset;
+    ZQuery1: TZQuery;
+    ZQuery2: TZQuery;
+    ZQuery3: TZQuery;
+    ZQuery4: TZQuery;
+    ZQuery5: TZQuery;
   private
     { Private declarations }
   public
