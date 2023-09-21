@@ -21,6 +21,12 @@ type
     btn3: TButton;
     btn4: TButton;
     btn5: TButton;
+    grp1: TGroupBox;
+    grp2: TGroupBox;
+    grp3: TGroupBox;
+    grp4: TGroupBox;
+    grp5: TGroupBox;
+    grp6: TGroupBox;
   private
     { Private declarations }
   public

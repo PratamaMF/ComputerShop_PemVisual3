@@ -108,9 +108,9 @@ object Form6: TForm6
       end
     end
     object btn1: TButton
-      Left = 192
+      Left = 144
       Top = 144
-      Width = 161
+      Width = 177
       Height = 49
       Caption = 'PENJUALAN'
       Font.Charset = ANSI_CHARSET
@@ -122,9 +122,9 @@ object Form6: TForm6
       TabOrder = 1
     end
     object btn2: TButton
-      Left = 376
+      Left = 344
       Top = 144
-      Width = 161
+      Width = 177
       Height = 49
       Caption = 'SERVICE'
       Font.Charset = ANSI_CHARSET
@@ -136,9 +136,9 @@ object Form6: TForm6
       TabOrder = 2
     end
     object btn3: TButton
-      Left = 560
+      Left = 544
       Top = 144
-      Width = 161
+      Width = 177
       Height = 49
       Caption = 'RAKITAN'
       Font.Charset = ANSI_CHARSET
@@ -152,7 +152,7 @@ object Form6: TForm6
     object btn4: TButton
       Left = 744
       Top = 144
-      Width = 161
+      Width = 177
       Height = 49
       Caption = 'PRODUK'
       Font.Charset = ANSI_CHARSET
@@ -164,9 +164,9 @@ object Form6: TForm6
       TabOrder = 4
     end
     object btn5: TButton
-      Left = 928
+      Left = 944
       Top = 144
-      Width = 161
+      Width = 177
       Height = 49
       Caption = 'USER'
       Font.Charset = ANSI_CHARSET
@@ -176,6 +176,90 @@ object Form6: TForm6
       Font.Style = []
       ParentFont = False
       TabOrder = 5
+    end
+    object grp1: TGroupBox
+      Left = 144
+      Top = 216
+      Width = 177
+      Height = 185
+      Caption = 'Penjualan'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+      object grp2: TGroupBox
+        Left = 0
+        Top = 0
+        Width = 177
+        Height = 185
+        Caption = ' Penjualan'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+    end
+    object grp3: TGroupBox
+      Left = 344
+      Top = 216
+      Width = 177
+      Height = 185
+      Caption = ' Service'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 7
+    end
+    object grp4: TGroupBox
+      Left = 544
+      Top = 216
+      Width = 177
+      Height = 185
+      Caption = ' Rakitan'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 8
+    end
+    object grp5: TGroupBox
+      Left = 744
+      Top = 216
+      Width = 177
+      Height = 185
+      Caption = ' Produk'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 9
+    end
+    object grp6: TGroupBox
+      Left = 944
+      Top = 216
+      Width = 177
+      Height = 185
+      Caption = '  User'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 10
     end
   end
 end

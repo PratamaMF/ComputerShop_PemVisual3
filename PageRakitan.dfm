@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 147
-  Top = 134
+  Left = 80
+  Top = 103
   Width = 1303
   Height = 714
   Caption = 'Form Rakitan'
@@ -246,7 +246,7 @@ object Form4: TForm4
       TabOrder = 3
     end
     object DBGrid2: TDBGrid
-      Left = 64
+      Left = 72
       Top = 456
       Width = 1129
       Height = 209
