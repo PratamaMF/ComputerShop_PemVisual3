@@ -25,6 +25,7 @@ type
     procedure btn5Click(Sender: TObject);
     procedure btn6Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
+    procedure btn4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -69,6 +70,11 @@ end;
 procedure TForm1.btn7Click(Sender: TObject);
 begin
   Form7.Showmodal;
+end;
+
+procedure TForm1.btn4Click(Sender: TObject);
+begin
+  Form1.Close;
 end;
 
 end.

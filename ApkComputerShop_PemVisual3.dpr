@@ -9,7 +9,8 @@ uses
   PageProduk in 'PageProduk.pas' {Form5},
   PageLaporan in 'PageLaporan.pas' {Form6},
   PageUser in 'PageUser.pas' {Form7},
-  DModule in 'DModule.pas' {DataModule1: TDataModule};
+  DModule in 'DModule.pas' {DataModule1: TDataModule},
+  PageAddSpesifikasi in 'PageAddSpesifikasi.pas' {Form8};
 
 {$R *.res}
 
@@ -23,5 +24,6 @@ begin
   Application.CreateForm(TForm6, Form6);
   Application.CreateForm(TForm7, Form7);
   Application.CreateForm(TDataModule1, DataModule1);
+  Application.CreateForm(TForm8, Form8);
   Application.Run;
 end.

@@ -27,14 +27,16 @@ type
     Edt2: TEdit;
     dtp1: TDateTimePicker;
     DBGrid2: TDBGrid;
-    Computer: TMemo;
     Cbb1: TComboBox;
-    Cbb2: TComboBox;
     Edt3: TEdit;
     btn1: TButton;
     btn2: TButton;
     btn3: TButton;
     btn4: TButton;
+    DBGrid1: TDBGrid;
+    btn5: TButton;
+    Edt4: TEdit;
+    procedure btn5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -46,6 +48,13 @@ var
 
 implementation
 
+uses PageAddSpesifikasi;
+
 {$R *.dfm}
+
+procedure TForm4.btn5Click(Sender: TObject);
+begin
+  Form8.showmodal;
+end;
 
 end.
