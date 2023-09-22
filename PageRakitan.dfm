@@ -3,6 +3,7 @@ object Form4: TForm4
   Top = 124
   Width = 1303
   Height = 714
+  Align = alClient
   Caption = 'Form Rakitan'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,8 +17,8 @@ object Form4: TForm4
   object pnl1: TPanel
     Left = -8
     Top = 0
-    Width = 1273
-    Height = 657
+    Width = 1545
+    Height = 841
     Color = clWhite
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -66,9 +67,9 @@ object Form4: TForm4
       ParentFont = False
     end
     object l_6: TLabel
-      Left = 576
-      Top = 80
-      Width = 141
+      Left = 720
+      Top = 88
+      Width = 153
       Height = 31
       Caption = 'RAKITAN PC'
       Font.Charset = ANSI_CHARSET
@@ -79,8 +80,8 @@ object Form4: TForm4
       ParentFont = False
     end
     object l_7: TLabel
-      Left = 72
-      Top = 128
+      Left = 128
+      Top = 144
       Width = 197
       Height = 21
       Caption = 'Nama Pelanggan                 :'
@@ -92,8 +93,8 @@ object Form4: TForm4
       ParentFont = False
     end
     object l_8: TLabel
-      Left = 72
-      Top = 160
+      Left = 128
+      Top = 176
       Width = 197
       Height = 21
       Caption = 'No Telepon                            :'
@@ -105,8 +106,8 @@ object Form4: TForm4
       ParentFont = False
     end
     object l_9: TLabel
-      Left = 72
-      Top = 192
+      Left = 128
+      Top = 208
       Width = 195
       Height = 21
       Caption = 'Tanggal Rakitan                  :'
@@ -118,8 +119,8 @@ object Form4: TForm4
       ParentFont = False
     end
     object l_13: TLabel
-      Left = 72
-      Top = 328
+      Left = 128
+      Top = 344
       Width = 193
       Height = 21
       Caption = 'Status                                   :'
@@ -131,8 +132,8 @@ object Form4: TForm4
       ParentFont = False
     end
     object l_12: TLabel
-      Left = 696
-      Top = 128
+      Left = 752
+      Top = 144
       Width = 87
       Height = 21
       Caption = 'Spesifikasi :'
@@ -144,8 +145,8 @@ object Form4: TForm4
       ParentFont = False
     end
     object l_15: TLabel
-      Left = 72
-      Top = 264
+      Left = 128
+      Top = 280
       Width = 190
       Height = 21
       Caption = 'Harga Total                         :'
@@ -157,8 +158,8 @@ object Form4: TForm4
       ParentFont = False
     end
     object l_10: TLabel
-      Left = 72
-      Top = 232
+      Left = 128
+      Top = 248
       Width = 192
       Height = 21
       Caption = 'Kode Rakit                           :'
@@ -170,8 +171,8 @@ object Form4: TForm4
       ParentFont = False
     end
     object l_11: TLabel
-      Left = 72
-      Top = 296
+      Left = 128
+      Top = 312
       Width = 191
       Height = 21
       Caption = 'Spesifikasi                           :'
@@ -185,12 +186,12 @@ object Form4: TForm4
     object pnl3: TPanel
       Left = 8
       Top = 0
-      Width = 1265
+      Width = 1521
       Height = 65
       Color = clMoneyGreen
       TabOrder = 0
       object l_1: TLabel
-        Left = 904
+        Left = 1152
         Top = 16
         Width = 336
         Height = 35
@@ -218,8 +219,8 @@ object Form4: TForm4
       end
     end
     object EdtNamapelanggan: TEdit
-      Left = 288
-      Top = 128
+      Left = 344
+      Top = 144
       Width = 377
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -231,8 +232,8 @@ object Form4: TForm4
       TabOrder = 1
     end
     object EdtNotelp: TEdit
-      Left = 288
-      Top = 160
+      Left = 344
+      Top = 176
       Width = 377
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -244,8 +245,8 @@ object Form4: TForm4
       TabOrder = 2
     end
     object dtpRakit: TDateTimePicker
-      Left = 288
-      Top = 192
+      Left = 344
+      Top = 208
       Width = 377
       Height = 29
       Date = 45188.005490509260000000
@@ -259,8 +260,8 @@ object Form4: TForm4
       TabOrder = 3
     end
     object CbbStatus: TComboBox
-      Left = 288
-      Top = 328
+      Left = 344
+      Top = 344
       Width = 377
       Height = 29
       ItemHeight = 21
@@ -271,8 +272,8 @@ object Form4: TForm4
         'Selesai Perakitan')
     end
     object EdtHarga: TEdit
-      Left = 288
-      Top = 264
+      Left = 344
+      Top = 280
       Width = 377
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -284,8 +285,8 @@ object Form4: TForm4
       TabOrder = 5
     end
     object btn1: TButton
-      Left = 72
-      Top = 392
+      Left = 128
+      Top = 408
       Width = 161
       Height = 49
       Caption = 'SIMPAN'
@@ -299,8 +300,8 @@ object Form4: TForm4
       OnClick = btn1Click
     end
     object btn2: TButton
-      Left = 256
-      Top = 392
+      Left = 312
+      Top = 408
       Width = 161
       Height = 49
       Caption = 'EDIT'
@@ -314,8 +315,8 @@ object Form4: TForm4
       OnClick = btn2Click
     end
     object btn3: TButton
-      Left = 440
-      Top = 392
+      Left = 496
+      Top = 408
       Width = 161
       Height = 49
       Caption = 'HAPUS'
@@ -329,8 +330,8 @@ object Form4: TForm4
       OnClick = btn3Click
     end
     object btn4: TButton
-      Left = 624
-      Top = 392
+      Left = 680
+      Top = 408
       Width = 161
       Height = 49
       Caption = 'CLEAR'
@@ -344,9 +345,9 @@ object Form4: TForm4
       OnClick = btn4Click
     end
     object DBGrid1: TDBGrid
-      Left = 696
-      Top = 152
-      Width = 529
+      Left = 752
+      Top = 168
+      Width = 697
       Height = 201
       DataSource = ds2
       TabOrder = 10
@@ -386,8 +387,8 @@ object Form4: TForm4
         end>
     end
     object btn5: TButton
-      Left = 808
-      Top = 392
+      Left = 864
+      Top = 408
       Width = 225
       Height = 49
       Caption = 'TAMBAH SPESIFIKASI'
@@ -395,8 +396,8 @@ object Form4: TForm4
       OnClick = btn5Click
     end
     object EdtKoderakit: TEdit
-      Left = 288
-      Top = 232
+      Left = 344
+      Top = 248
       Width = 377
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -408,8 +409,8 @@ object Form4: TForm4
       TabOrder = 12
     end
     object EdtSpesifikasi: TEdit
-      Left = 288
-      Top = 296
+      Left = 344
+      Top = 312
       Width = 377
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -421,9 +422,9 @@ object Form4: TForm4
       TabOrder = 13
     end
     object DBGrid2: TDBGrid
-      Left = 72
-      Top = 456
-      Width = 1161
+      Left = 128
+      Top = 472
+      Width = 1321
       Height = 185
       DataSource = ds1
       TabOrder = 14

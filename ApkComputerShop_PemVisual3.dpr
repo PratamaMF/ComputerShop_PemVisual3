@@ -10,12 +10,14 @@ uses
   PageLaporan in 'PageLaporan.pas' {Form6},
   PageUser in 'PageUser.pas' {Form7},
   DModule in 'DModule.pas' {DataModule1: TDataModule},
-  PageAddSpesifikasi in 'PageAddSpesifikasi.pas' {Form8};
+  PageAddSpesifikasi in 'PageAddSpesifikasi.pas' {Form8},
+  PageLogin in 'PageLogin.pas' {Form9};
 
 {$R *.res}
 
 begin
   Application.Initialize;
+  Application.CreateForm(TForm9, Form9);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TForm2, Form2);
   Application.CreateForm(TForm3, Form3);

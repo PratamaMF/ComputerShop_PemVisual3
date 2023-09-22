@@ -3,6 +3,7 @@ object Form7: TForm7
   Top = 122
   Width = 1304
   Height = 713
+  Align = alClient
   Caption = 'Form User'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,8 +17,8 @@ object Form7: TForm7
   object pnl1: TPanel
     Left = -8
     Top = 0
-    Width = 1273
-    Height = 657
+    Width = 1545
+    Height = 841
     Caption = 'c'
     Color = clWhite
     TabOrder = 0
@@ -61,8 +62,8 @@ object Form7: TForm7
       ParentFont = False
     end
     object l_6: TLabel
-      Left = 576
-      Top = 80
+      Left = 776
+      Top = 104
       Width = 65
       Height = 31
       Caption = 'USER'
@@ -74,8 +75,8 @@ object Form7: TForm7
       ParentFont = False
     end
     object l_10: TLabel
-      Left = 120
-      Top = 136
+      Left = 384
+      Top = 160
       Width = 196
       Height = 21
       Caption = 'Nama                                    : '
@@ -87,8 +88,8 @@ object Form7: TForm7
       ParentFont = False
     end
     object l_11: TLabel
-      Left = 120
-      Top = 200
+      Left = 384
+      Top = 224
       Width = 191
       Height = 21
       Caption = 'Password                             :'
@@ -100,8 +101,8 @@ object Form7: TForm7
       ParentFont = False
     end
     object l_13: TLabel
-      Left = 120
-      Top = 168
+      Left = 384
+      Top = 192
       Width = 190
       Height = 21
       Caption = 'Username                            :'
@@ -113,8 +114,8 @@ object Form7: TForm7
       ParentFont = False
     end
     object l_14: TLabel
-      Left = 120
-      Top = 232
+      Left = 384
+      Top = 256
       Width = 189
       Height = 21
       Caption = 'Level                                     :'
@@ -128,12 +129,12 @@ object Form7: TForm7
     object pnl3: TPanel
       Left = 8
       Top = 0
-      Width = 1265
+      Width = 1521
       Height = 65
       Color = clMoneyGreen
       TabOrder = 0
       object l_1: TLabel
-        Left = 904
+        Left = 1152
         Top = 16
         Width = 336
         Height = 35
@@ -161,8 +162,8 @@ object Form7: TForm7
       end
     end
     object EdtNama: TEdit
-      Left = 336
-      Top = 136
+      Left = 600
+      Top = 160
       Width = 497
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -174,8 +175,8 @@ object Form7: TForm7
       TabOrder = 1
     end
     object EdtUsername: TEdit
-      Left = 336
-      Top = 168
+      Left = 600
+      Top = 192
       Width = 497
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -187,9 +188,9 @@ object Form7: TForm7
       TabOrder = 2
     end
     object DBGrid2: TDBGrid
-      Left = 120
-      Top = 344
-      Width = 1057
+      Left = 320
+      Top = 368
+      Width = 849
       Height = 297
       DataSource = ds1
       Font.Charset = ANSI_CHARSET
@@ -207,8 +208,8 @@ object Form7: TForm7
       OnCellClick = DBGrid2CellClick
     end
     object EdtPassword: TEdit
-      Left = 336
-      Top = 200
+      Left = 600
+      Top = 224
       Width = 497
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -220,8 +221,8 @@ object Form7: TForm7
       TabOrder = 4
     end
     object btn1: TButton
-      Left = 120
-      Top = 280
+      Left = 392
+      Top = 304
       Width = 161
       Height = 49
       Caption = 'SIMPAN'
@@ -235,8 +236,8 @@ object Form7: TForm7
       OnClick = btn1Click
     end
     object btn2: TButton
-      Left = 304
-      Top = 280
+      Left = 576
+      Top = 304
       Width = 161
       Height = 49
       Caption = 'EDIT'
@@ -250,8 +251,8 @@ object Form7: TForm7
       OnClick = btn2Click
     end
     object btn3: TButton
-      Left = 488
-      Top = 280
+      Left = 760
+      Top = 304
       Width = 161
       Height = 49
       Caption = 'HAPUS'
@@ -265,8 +266,8 @@ object Form7: TForm7
       OnClick = btn3Click
     end
     object btn4: TButton
-      Left = 672
-      Top = 280
+      Left = 944
+      Top = 304
       Width = 161
       Height = 49
       Caption = 'CLEAR'
@@ -280,8 +281,8 @@ object Form7: TForm7
       OnClick = btn4Click
     end
     object CbbLevel: TComboBox
-      Left = 336
-      Top = 232
+      Left = 600
+      Top = 256
       Width = 313
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -300,8 +301,8 @@ object Form7: TForm7
   end
   object ds1: TDataSource
     DataSet = ZQuery1
-    Left = 1064
-    Top = 224
+    Left = 1344
+    Top = 216
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -316,7 +317,7 @@ object Form7: TForm7
     LibraryLocation = 
       'C:\Users\Asus\Documents\TUGAS SEMESTER 5\Pemrograman Visual 3\Tu' +
       'gas\ComputerShop\libmysql.dll'
-    Left = 1032
+    Left = 1320
     Top = 168
   end
   object ZQuery1: TZQuery
@@ -325,7 +326,7 @@ object Form7: TForm7
     SQL.Strings = (
       'select * from tb_user')
     Params = <>
-    Left = 1096
+    Left = 1376
     Top = 168
   end
 end

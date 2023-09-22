@@ -3,10 +3,13 @@ unit DModule;
 interface
 
 uses
-  SysUtils, Classes, ZAbstractConnection, ZConnection;
+  SysUtils, Classes, ZAbstractConnection, ZConnection, DB,
+  ZAbstractRODataset, ZAbstractDataset, ZDataset;
 
 type
   TDataModule1 = class(TDataModule)
+    ZConnection1: TZConnection;
+    ZQuery1: TZQuery;
   private
     { Private declarations }
   public

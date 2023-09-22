@@ -3,6 +3,7 @@ object Form8: TForm8
   Top = 132
   Width = 1304
   Height = 712
+  Align = alClient
   Caption = 'Form Tambah Spesifikasi'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,10 +15,11 @@ object Form8: TForm8
   PixelsPerInch = 96
   TextHeight = 13
   object pnl1: TPanel
-    Left = -8
+    Left = 0
     Top = 0
-    Width = 1273
-    Height = 657
+    Width = 1288
+    Height = 673
+    Align = alClient
     Color = clWhite
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -66,11 +68,11 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_6: TLabel
-      Left = 576
-      Top = 80
-      Width = 141
+      Left = 640
+      Top = 104
+      Width = 252
       Height = 31
-      Caption = 'RAKITAN PC'
+      Caption = 'TAMBAH SPESIFIKASI'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -24
@@ -79,8 +81,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_7: TLabel
-      Left = 72
-      Top = 128
+      Left = 280
+      Top = 168
       Width = 196
       Height = 21
       Caption = 'Kode Rakit                            :'
@@ -92,8 +94,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_8: TLabel
-      Left = 72
-      Top = 160
+      Left = 280
+      Top = 200
       Width = 196
       Height = 21
       Caption = 'Harga                                     :'
@@ -105,8 +107,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_9: TLabel
-      Left = 72
-      Top = 192
+      Left = 280
+      Top = 232
       Width = 195
       Height = 21
       Caption = 'Spesifikasi                            :'
@@ -118,14 +120,14 @@ object Form8: TForm8
       ParentFont = False
     end
     object pnl3: TPanel
-      Left = 8
+      Left = 0
       Top = 0
-      Width = 1265
+      Width = 1537
       Height = 65
       Color = clMoneyGreen
       TabOrder = 0
       object l_1: TLabel
-        Left = 904
+        Left = 1160
         Top = 16
         Width = 336
         Height = 35
@@ -153,8 +155,8 @@ object Form8: TForm8
       end
     end
     object EdtKoderakit: TEdit
-      Left = 288
-      Top = 128
+      Left = 496
+      Top = 168
       Width = 377
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -166,8 +168,8 @@ object Form8: TForm8
       TabOrder = 1
     end
     object EdtHarga: TEdit
-      Left = 288
-      Top = 160
+      Left = 496
+      Top = 200
       Width = 377
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -179,8 +181,8 @@ object Form8: TForm8
       TabOrder = 2
     end
     object EdtSpesifikasi: TEdit
-      Left = 288
-      Top = 192
+      Left = 496
+      Top = 232
       Width = 377
       Height = 29
       Font.Charset = ANSI_CHARSET
@@ -192,8 +194,8 @@ object Form8: TForm8
       TabOrder = 3
     end
     object btn1: TButton
-      Left = 696
-      Top = 128
+      Left = 904
+      Top = 168
       Width = 161
       Height = 49
       Caption = 'SIMPAN'
@@ -207,8 +209,8 @@ object Form8: TForm8
       OnClick = btn1Click
     end
     object btn2: TButton
-      Left = 696
-      Top = 192
+      Left = 904
+      Top = 232
       Width = 161
       Height = 49
       Caption = 'EDIT'
@@ -222,8 +224,8 @@ object Form8: TForm8
       OnClick = btn2Click
     end
     object btn3: TButton
-      Left = 880
-      Top = 128
+      Left = 1088
+      Top = 168
       Width = 161
       Height = 49
       Caption = 'HAPUS'
@@ -237,8 +239,8 @@ object Form8: TForm8
       OnClick = btn3Click
     end
     object btn4: TButton
-      Left = 880
-      Top = 192
+      Left = 1088
+      Top = 232
       Width = 161
       Height = 49
       Caption = 'CLEAR'
@@ -252,9 +254,9 @@ object Form8: TForm8
       OnClick = btn4Click
     end
     object DBGrid1: TDBGrid
-      Left = 80
-      Top = 272
-      Width = 993
+      Left = 280
+      Top = 296
+      Width = 953
       Height = 337
       DataSource = ds1
       TabOrder = 8
@@ -278,14 +280,15 @@ object Form8: TForm8
         item
           Expanded = False
           FieldName = 'spesifikasi'
+          Width = 700
           Visible = True
         end>
     end
   end
   object ds1: TDataSource
     DataSet = ZQuery1
-    Left = 1144
-    Top = 288
+    Left = 1432
+    Top = 272
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -300,8 +303,8 @@ object Form8: TForm8
     LibraryLocation = 
       'C:\Users\Asus\Documents\TUGAS SEMESTER 5\Pemrograman Visual 3\Tu' +
       'gas\ComputerShop\libmysql.dll'
-    Left = 1128
-    Top = 168
+    Left = 1432
+    Top = 160
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -309,7 +312,7 @@ object Form8: TForm8
     SQL.Strings = (
       'select * from tb_spesifikasi')
     Params = <>
-    Left = 1144
-    Top = 232
+    Left = 1432
+    Top = 216
   end
 end
