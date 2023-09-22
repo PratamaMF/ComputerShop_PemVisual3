@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 146
-  Top = 117
+  Left = 193
+  Top = 122
   Width = 1304
   Height = 713
   Caption = 'Form User'
@@ -160,7 +160,7 @@ object Form7: TForm7
         ParentFont = False
       end
     end
-    object Edt4: TEdit
+    object EdtNama: TEdit
       Left = 336
       Top = 136
       Width = 497
@@ -173,7 +173,7 @@ object Form7: TForm7
       ParentFont = False
       TabOrder = 1
     end
-    object Edt7: TEdit
+    object EdtUsername: TEdit
       Left = 336
       Top = 168
       Width = 497
@@ -191,14 +191,22 @@ object Form7: TForm7
       Top = 344
       Width = 1057
       Height = 297
+      DataSource = ds1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 3
-      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Charset = ANSI_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
-      TitleFont.Name = 'Tahoma'
+      TitleFont.Height = -19
+      TitleFont.Name = 'Vastago Grotesk'
       TitleFont.Style = []
+      OnCellClick = DBGrid2CellClick
     end
-    object Edt5: TEdit
+    object EdtPassword: TEdit
       Left = 336
       Top = 200
       Width = 497
@@ -224,6 +232,7 @@ object Form7: TForm7
       Font.Style = []
       ParentFont = False
       TabOrder = 5
+      OnClick = btn1Click
     end
     object btn2: TButton
       Left = 304
@@ -238,6 +247,7 @@ object Form7: TForm7
       Font.Style = []
       ParentFont = False
       TabOrder = 6
+      OnClick = btn2Click
     end
     object btn3: TButton
       Left = 488
@@ -252,6 +262,7 @@ object Form7: TForm7
       Font.Style = []
       ParentFont = False
       TabOrder = 7
+      OnClick = btn3Click
     end
     object btn4: TButton
       Left = 672
@@ -266,8 +277,9 @@ object Form7: TForm7
       Font.Style = []
       ParentFont = False
       TabOrder = 8
+      OnClick = btn4Click
     end
-    object Cbb1: TComboBox
+    object CbbLevel: TComboBox
       Left = 336
       Top = 232
       Width = 313
@@ -281,6 +293,39 @@ object Form7: TForm7
       ParentFont = False
       TabOrder = 9
       Text = 'Pilih Jabatan'
+      Items.Strings = (
+        'Admin'
+        'Kasir')
     end
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 1064
+    Top = 224
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'db_computershop'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 
+      'C:\Users\Asus\Documents\TUGAS SEMESTER 5\Pemrograman Visual 3\Tu' +
+      'gas\ComputerShop\libmysql.dll'
+    Left = 1032
+    Top = 168
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_user')
+    Params = <>
+    Left = 1096
+    Top = 168
   end
 end

@@ -1841,6 +1841,9 @@ object Form6: TForm6
     Top = 304
   end
   object ZQuery5: TZQuery
+    Connection = ZConnection1
+    SQL.Strings = (
+      'select * from tb_user')
     Params = <>
     Left = 960
     Top = 304
