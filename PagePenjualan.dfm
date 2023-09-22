@@ -17,7 +17,7 @@ object Form2: TForm2
     Left = -8
     Top = 0
     Width = 1273
-    Height = 657
+    Height = 673
     Color = clWhite
     TabOrder = 0
     object l_2: TLabel
@@ -324,83 +324,6 @@ object Form2: TForm2
       ParentFont = False
       TabOrder = 8
     end
-    object DBGrid2: TDBGrid
-      Left = 112
-      Top = 456
-      Width = 1089
-      Height = 233
-      DataSource = ds1
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Vastago Grotesk'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 9
-      TitleFont.Charset = ANSI_CHARSET
-      TitleFont.Color = clWindowText
-      TitleFont.Height = -15
-      TitleFont.Name = 'Vastago Grotesk'
-      TitleFont.Style = []
-      OnCellClick = DBGrid2CellClick
-      Columns = <
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'id_penjualan'
-          Title.Alignment = taCenter
-          Visible = True
-        end
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'nama_pelanggan'
-          Title.Alignment = taCenter
-          Visible = True
-        end
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'no_telepon'
-          Title.Alignment = taCenter
-          Visible = True
-        end
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'tgl_pembelian'
-          Title.Alignment = taCenter
-          Visible = True
-        end
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'kode_barang'
-          Title.Alignment = taCenter
-          Visible = True
-        end
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'nama_barang'
-          Title.Alignment = taCenter
-          Visible = True
-        end
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'qty'
-          Title.Alignment = taCenter
-          Visible = True
-        end
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'total_harga'
-          Title.Alignment = taCenter
-          Visible = True
-        end>
-    end
     object btn1: TButton
       Left = 112
       Top = 392
@@ -413,7 +336,7 @@ object Form2: TForm2
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 10
+      TabOrder = 9
       OnClick = btn1Click
     end
     object btn2: TButton
@@ -428,7 +351,7 @@ object Form2: TForm2
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 11
+      TabOrder = 10
       OnClick = btn2Click
     end
     object btn3: TButton
@@ -443,7 +366,7 @@ object Form2: TForm2
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 12
+      TabOrder = 11
       OnClick = btn3Click
     end
     object btn4: TButton
@@ -458,7 +381,7 @@ object Form2: TForm2
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 13
+      TabOrder = 12
       OnClick = btn4Click
     end
     object EdtHarga: TEdit
@@ -472,7 +395,7 @@ object Form2: TForm2
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 14
+      TabOrder = 13
       Visible = False
     end
     object btn5: TButton
@@ -487,8 +410,40 @@ object Form2: TForm2
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 15
+      TabOrder = 14
       OnClick = btn5Click
+    end
+    object EdtIdproduk: TEdit
+      Left = 1104
+      Top = 408
+      Width = 121
+      Height = 29
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 15
+    end
+    object DBGrid2: TDBGrid
+      Left = 112
+      Top = 456
+      Width = 1081
+      Height = 177
+      DataSource = ds1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 16
+      TitleFont.Charset = ANSI_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -15
+      TitleFont.Name = 'Vastago Grotesk'
+      TitleFont.Style = []
     end
   end
   object ZConnection1: TZConnection

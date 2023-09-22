@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 80
-  Top = 103
+  Left = 192
+  Top = 124
   Width = 1303
   Height = 714
   Caption = 'Form Rakitan'
@@ -119,7 +119,7 @@ object Form4: TForm4
     end
     object l_13: TLabel
       Left = 72
-      Top = 296
+      Top = 328
       Width = 193
       Height = 21
       Caption = 'Status                                   :'
@@ -159,9 +159,22 @@ object Form4: TForm4
     object l_10: TLabel
       Left = 72
       Top = 232
-      Width = 184
+      Width = 192
       Height = 21
-      Caption = 'Kode Rakit                         :'
+      Caption = 'Kode Rakit                           :'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
+    end
+    object l_11: TLabel
+      Left = 72
+      Top = 296
+      Width = 191
+      Height = 21
+      Caption = 'Spesifikasi                           :'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -245,66 +258,13 @@ object Form4: TForm4
       ParentFont = False
       TabOrder = 3
     end
-    object DBGrid2: TDBGrid
-      Left = 72
-      Top = 456
-      Width = 1129
-      Height = 209
-      DataSource = ds1
-      TabOrder = 4
-      TitleFont.Charset = ANSI_CHARSET
-      TitleFont.Color = clWindowText
-      TitleFont.Height = -16
-      TitleFont.Name = 'Vastago Grotesk'
-      TitleFont.Style = []
-      OnCellClick = DBGrid2CellClick
-      Columns = <
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'nama_pelanggan'
-          Title.Alignment = taCenter
-          Width = 200
-          Visible = True
-        end
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'no_telepon'
-          Title.Alignment = taCenter
-          Visible = True
-        end
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'tgl_rakitan'
-          Title.Alignment = taCenter
-          Width = 110
-          Visible = True
-        end
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'status'
-          Title.Alignment = taCenter
-          Width = 280
-          Visible = True
-        end
-        item
-          Alignment = taCenter
-          Expanded = False
-          FieldName = 'id_spesifikasi'
-          Title.Alignment = taCenter
-          Visible = True
-        end>
-    end
     object CbbStatus: TComboBox
       Left = 288
-      Top = 296
+      Top = 328
       Width = 377
       Height = 29
       ItemHeight = 21
-      TabOrder = 5
+      TabOrder = 4
       Items.Strings = (
         'Melengkapi Komponen'
         'Proses Perakitan'
@@ -321,7 +281,7 @@ object Form4: TForm4
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 6
+      TabOrder = 5
     end
     object btn1: TButton
       Left = 72
@@ -335,7 +295,7 @@ object Form4: TForm4
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 7
+      TabOrder = 6
       OnClick = btn1Click
     end
     object btn2: TButton
@@ -350,7 +310,7 @@ object Form4: TForm4
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 8
+      TabOrder = 7
       OnClick = btn2Click
     end
     object btn3: TButton
@@ -365,7 +325,7 @@ object Form4: TForm4
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 9
+      TabOrder = 8
       OnClick = btn3Click
     end
     object btn4: TButton
@@ -380,16 +340,16 @@ object Form4: TForm4
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
-      TabOrder = 10
+      TabOrder = 9
       OnClick = btn4Click
     end
     object DBGrid1: TDBGrid
       Left = 696
       Top = 152
       Width = 529
-      Height = 185
+      Height = 201
       DataSource = ds2
-      TabOrder = 11
+      TabOrder = 10
       TitleFont.Charset = ANSI_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -16
@@ -431,22 +391,8 @@ object Form4: TForm4
       Width = 225
       Height = 49
       Caption = 'TAMBAH SPESIFIKASI'
-      TabOrder = 12
+      TabOrder = 11
       OnClick = btn5Click
-    end
-    object EdtIdSpesifikasi: TEdit
-      Left = 792
-      Top = 344
-      Width = 377
-      Height = 29
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Vastago Grotesk'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 13
-      Visible = False
     end
     object EdtKoderakit: TEdit
       Left = 288
@@ -459,7 +405,77 @@ object Form4: TForm4
       Font.Name = 'Vastago Grotesk'
       Font.Style = []
       ParentFont = False
+      TabOrder = 12
+    end
+    object EdtSpesifikasi: TEdit
+      Left = 288
+      Top = 296
+      Width = 377
+      Height = 29
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Vastago Grotesk'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 13
+    end
+    object DBGrid2: TDBGrid
+      Left = 72
+      Top = 456
+      Width = 1161
+      Height = 185
+      DataSource = ds1
       TabOrder = 14
+      TitleFont.Charset = ANSI_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -16
+      TitleFont.Name = 'Vastago Grotesk'
+      TitleFont.Style = []
+      OnCellClick = DBGrid2CellClick
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'id_rakitan'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'nama_pelanggan'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'no_telepon'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'tgl_rakitan'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'kode_rakit'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'harga_total'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'spesifikasi'
+          Width = 350
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'status'
+          Width = 350
+          Visible = True
+        end>
     end
   end
   object ZConnection1: TZConnection

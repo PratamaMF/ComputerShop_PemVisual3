@@ -44,6 +44,7 @@ type
     ZQuery4: TZQuery;
     ZQuery5: TZQuery;
     ZConnection1: TZConnection;
+    procedure btn1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -56,5 +57,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm6.btn1Click(Sender: TObject);
+begin
+  frxReport1.ShowReport(True);
+end;
 
 end.

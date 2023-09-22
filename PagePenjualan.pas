@@ -34,7 +34,6 @@ type
     EdtTotalharga: TEdit;
     DBGrid1: TDBGrid;
     dtpPembelian: TDateTimePicker;
-    DBGrid2: TDBGrid;
     btn1: TButton;
     btn2: TButton;
     btn3: TButton;
@@ -46,6 +45,8 @@ type
     ds2: TDataSource;
     EdtHarga: TEdit;
     btn5: TButton;
+    EdtIdproduk: TEdit;
+    DBGrid2: TDBGrid;
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
@@ -70,7 +71,7 @@ implementation
 procedure TForm2.btn1Click(Sender: TObject);
 begin
   ZQuery1.SQL.Clear;
-  ZQuery1.SQL.Add('insert into tb_penjualan values(null,"'+EdtNamapelanggan.Text+'","'+EdtNotelp.Text+'","'+formatdatetime('yyyy-mm-dd',dtpPembelian.Date)+'","'+EdtKodebarang.Text+'","'+EdtNamabarang.Text+'","'+EdtQty.Text+'","'+EdtTotalharga.Text+'")');
+  ZQuery1.SQL.Add('insert into tb_penjualan values(null,"'+EdtNamapelanggan.Text+'","'+EdtNotelp.Text+'","'+formatdatetime('yyyy-mm-dd',dtpPembelian.Date)+'","'+EdtQty.Text+'","'+EdtTotalharga.Text+'","'+EdtKodebarang.Text+'")');
   ZQuery1.ExecSQL ;
 
   ZQuery1.SQL.Clear;
@@ -111,11 +112,13 @@ begin
   EdtQty.Text:='';
   EdtTotalharga.Text:='';
   EdtHarga.Text:='';
+  EdtIdproduk.Text:='';
 end;
 
 procedure TForm2.DBGrid1CellClick(Column: TColumn);
 begin
   id:=ZQuery2.Fields[0].AsString;
+  EdtIdproduk.Text:=ZQuery2.Fields[0].AsString;
   EdtKodebarang.Text:=ZQuery2.Fields[1].AsString;
   EdtNamabarang.Text:=ZQuery2.Fields[2].AsString;
   EdtHarga.Text:=ZQuery2.Fields[3].AsString;
@@ -126,10 +129,9 @@ begin
   id:=ZQuery1.Fields[0].AsString;
   EdtNamapelanggan.Text:=ZQuery1.Fields[1].AsString;
   EdtNotelp.Text:=ZQuery1.Fields[2].AsString;
-  EdtKodebarang.Text:=ZQuery1.Fields[4].AsString;
-  EdtNamabarang.Text:=ZQuery1.Fields[5].AsString;
-  EdtQty.Text:=ZQuery1.Fields[6].AsString;
-  EdtTotalharga.Text:=ZQuery1.Fields[7].AsString;
+  EdtQty.Text:=ZQuery1.Fields[4].AsString;
+  EdtTotalharga.Text:=ZQuery1.Fields[5].AsString;
+  EdtIdproduk.Text:=ZQuery1.Fields[6].AsString;
 end;
 
 procedure TForm2.btn5Click(Sender: TObject);
