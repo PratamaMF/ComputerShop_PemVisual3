@@ -342,7 +342,7 @@ object Form6: TForm6
         DataSetName = 'frxDBDataset1'
         RowCount = 0
         object Memo9: TfrxMemoView
-          Left = 151.181200000000000000
+          Left = 185.196970000000000000
           Width = 268.346630000000000000
           Height = 22.677180000000000000
           ShowHint = False
@@ -362,7 +362,7 @@ object Form6: TForm6
           VAlign = vaCenter
         end
         object Memo10: TfrxMemoView
-          Left = 26.456710000000000000
+          Left = 60.472480000000000000
           Width = 124.724490000000000000
           Height = 22.677180000000000000
           ShowHint = False
@@ -382,8 +382,8 @@ object Form6: TForm6
           VAlign = vaCenter
         end
         object Memo11: TfrxMemoView
-          Left = 419.527830000000000000
-          Width = 94.488250000000000000
+          Left = 453.543600000000000000
+          Width = 60.472480000000000000
           Height = 22.677180000000000000
           ShowHint = False
           DataField = 'qty'
@@ -431,7 +431,7 @@ object Form6: TForm6
         object Memo16: TfrxMemoView
           Left = 26.456710000000000000
           Top = 22.677180000000000000
-          Width = 124.724490000000000000
+          Width = 158.740260000000000000
           Height = 26.456710000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -447,9 +447,9 @@ object Form6: TForm6
           VAlign = vaCenter
         end
         object Memo17: TfrxMemoView
-          Left = 151.181200000000000000
+          Left = 185.196970000000000000
           Top = 22.677180000000000000
-          Width = 540.472790000000000000
+          Width = 506.457020000000000000
           Height = 26.456710000000000000
           ShowHint = False
           DataField = 'keterangan'
@@ -468,6 +468,23 @@ object Form6: TForm6
           ParentFont = False
           VAlign = vaCenter
         end
+        object Memo20: TfrxMemoView
+          Left = 26.456710000000000000
+          Width = 34.015770000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[line]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
       end
       object GroupHeader1: TfrxGroupHeader
         Height = 154.960730000000000000
@@ -475,7 +492,7 @@ object Form6: TForm6
         Width = 718.110700000000000000
         Condition = 'frxDBDataset1."id_penjualan"'
         object Memo2: TfrxMemoView
-          Left = 151.181200000000000000
+          Left = 185.196970000000000000
           Top = 132.283550000000000000
           Width = 268.346630000000000000
           Height = 22.677180000000000000
@@ -511,7 +528,7 @@ object Form6: TForm6
             'Nama Pelanggan')
         end
         object Memo6: TfrxMemoView
-          Left = 26.456710000000000000
+          Left = 60.472480000000000000
           Top = 132.283550000000000000
           Width = 124.724490000000000000
           Height = 22.677180000000000000
@@ -538,9 +555,9 @@ object Form6: TForm6
             'Tanggal Pembelian')
         end
         object Memo3: TfrxMemoView
-          Left = 419.527830000000000000
+          Left = 453.543600000000000000
           Top = 132.283550000000000000
-          Width = 94.488250000000000000
+          Width = 60.472480000000000000
           Height = 22.677180000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -649,7 +666,6 @@ object Form6: TForm6
           Width = 238.110390000000000000
           Height = 18.897650000000000000
           ShowHint = False
-          DataField = 'no_telepon'
           DataSet = frxDataset1
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
@@ -658,7 +674,7 @@ object Form6: TForm6
           Font.Name = 'Arial'
           Font.Style = []
           Memo.UTF8 = (
-            '[frxDBDataset1."no_telepon"]')
+            '[frxDBDataset1."no_hp"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -678,6 +694,24 @@ object Form6: TForm6
           Font.Style = []
           Memo.UTF8 = (
             '[frxDBDataset1."tgl_pembelian"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo19: TfrxMemoView
+          Left = 26.456710000000000000
+          Top = 132.283550000000000000
+          Width = 34.015770000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'No')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -1949,13 +1983,19 @@ object Form6: TForm6
     CloseDataSource = False
     FieldAliases.Strings = (
       'id_penjualan=id_penjualan'
-      'nama_pelanggan=nama_pelanggan'
-      'no_telepon=no_telepon'
       'tgl_pembelian=tgl_pembelian'
       'qty=qty'
       'total_harga=total_harga'
+      'id_produk=id_produk'
+      'id_pelanggan=id_pelanggan'
+      'id_pelanggan_1=id_pelanggan_1'
+      'nama_pelanggan=nama_pelanggan'
+      'no_hp=no_hp'
+      'status=status'
+      'id_produk_1=id_produk_1'
       'kode_barang=kode_barang'
       'nama_barang=nama_barang'
+      'harga_barang=harga_barang'
       'keterangan=keterangan')
     DataSet = ZQuery1
     BCDToCurrency = False
@@ -2026,6 +2066,13 @@ object Form6: TForm6
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      
+        'SELECT tb_penjualan.*, tb_pelanggan.*, tb_produk.* FROM tb_penju' +
+        'alan JOIN tb_pelanggan ON tb_penjualan.id_pelanggan=tb_pelanggan' +
+        '.id_pelanggan JOIN tb_produk ON tb_penjualan.id_produk=tb_produk' +
+        '.id_produk ')
     Params = <>
     Left = 312
     Top = 352
