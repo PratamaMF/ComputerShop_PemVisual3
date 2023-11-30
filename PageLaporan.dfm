@@ -173,7 +173,7 @@ object Form6: TForm6
       Top = 200
       Width = 177
       Height = 49
-      Caption = 'USER'
+      Caption = 'PELANGGAN'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -1701,7 +1701,7 @@ object Form6: TForm6
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45190.980315868100000000
-    ReportOptions.LastChange = 45191.998901898150000000
+    ReportOptions.LastChange = 45191.998901898200000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -1751,7 +1751,7 @@ object Form6: TForm6
         object Memo18: TfrxMemoView
           Align = baCenter
           Left = 283.464750000000000000
-          Top = 45.354360000000000000
+          Top = 60.472480000000000000
           Width = 151.181200000000000000
           Height = 22.677180000000000000
           ShowHint = False
@@ -1762,7 +1762,7 @@ object Form6: TForm6
           Font.Style = []
           HAlign = haCenter
           Memo.UTF8 = (
-            'USER')
+            '- PELANGGAN -')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -1782,11 +1782,11 @@ object Form6: TForm6
         DataSetName = 'frxDBDataset1'
         RowCount = 0
         object Memo9: TfrxMemoView
-          Left = 196.535560000000000000
-          Width = 188.976500000000000000
+          Left = 64.252010000000000000
+          Width = 268.346630000000000000
           Height = 22.677180000000000000
           ShowHint = False
-          DataField = 'username'
+          DataField = 'nama_pelanggan'
           DataSet = frxDataset5
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
@@ -1797,16 +1797,15 @@ object Form6: TForm6
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset1."username"]')
+            '[frxDBDataset1."nama_pelanggan"]')
           ParentFont = False
           VAlign = vaCenter
         end
         object Memo10: TfrxMemoView
           Left = 26.456710000000000000
-          Width = 170.078850000000000000
+          Width = 37.795300000000000000
           Height = 22.677180000000000000
           ShowHint = False
-          DataField = 'nama_pengguna'
           DataSet = frxDataset5
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
@@ -1817,16 +1816,16 @@ object Form6: TForm6
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset1."nama_pengguna"]')
+            '[line]')
           ParentFont = False
           VAlign = vaCenter
         end
         object Memo11: TfrxMemoView
-          Left = 385.512060000000000000
-          Width = 188.976500000000000000
+          Left = 332.598640000000000000
+          Width = 192.756030000000000000
           Height = 22.677180000000000000
           ShowHint = False
-          DataField = 'password'
+          DataField = 'no_hp'
           DataSet = frxDataset5
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
@@ -1837,16 +1836,16 @@ object Form6: TForm6
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset1."password"]')
+            '[frxDBDataset1."no_hp"]')
           ParentFont = False
           VAlign = vaCenter
         end
         object Memo12: TfrxMemoView
-          Left = 574.488560000000000000
-          Width = 117.165430000000000000
+          Left = 525.354670000000000000
+          Width = 170.078850000000000000
           Height = 22.677180000000000000
           ShowHint = False
-          DataField = 'level'
+          DataField = 'status'
           DataSet = frxDataset5
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
@@ -1857,7 +1856,7 @@ object Form6: TForm6
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset1."level"]')
+            '[frxDBDataset1."status"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -1867,9 +1866,9 @@ object Form6: TForm6
         Top = 204.094620000000000000
         Width = 718.110700000000000000
         object Memo2: TfrxMemoView
-          Left = 196.535560000000000000
+          Left = 64.252010000000000000
           Top = 22.677180000000000000
-          Width = 188.976500000000000000
+          Width = 268.346630000000000000
           Height = 22.677180000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -1881,12 +1880,31 @@ object Form6: TForm6
           Frame.Width = 2.000000000000000000
           HAlign = haCenter
           Memo.UTF8 = (
-            'Username')
+            'Nama Pelanggan')
           ParentFont = False
           VAlign = vaCenter
         end
         object Memo6: TfrxMemoView
           Left = 26.456710000000000000
+          Top = 22.677180000000000000
+          Width = 37.795300000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Frame.Width = 2.000000000000000000
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'No')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo3: TfrxMemoView
+          Left = 525.354670000000000000
           Top = 22.677180000000000000
           Width = 170.078850000000000000
           Height = 22.677180000000000000
@@ -1900,33 +1918,14 @@ object Form6: TForm6
           Frame.Width = 2.000000000000000000
           HAlign = haCenter
           Memo.UTF8 = (
-            'Nama Pengguna')
-          ParentFont = False
-          VAlign = vaCenter
-        end
-        object Memo3: TfrxMemoView
-          Left = 574.488560000000000000
-          Top = 22.677180000000000000
-          Width = 117.165430000000000000
-          Height = 22.677180000000000000
-          ShowHint = False
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          Frame.Width = 2.000000000000000000
-          HAlign = haCenter
-          Memo.UTF8 = (
-            'Level')
+            'Status')
           ParentFont = False
           VAlign = vaCenter
         end
         object Memo8: TfrxMemoView
-          Left = 385.512060000000000000
+          Left = 332.598640000000000000
           Top = 22.677180000000000000
-          Width = 188.976500000000000000
+          Width = 192.756030000000000000
           Height = 22.677180000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -1938,7 +1937,7 @@ object Form6: TForm6
           Frame.Width = 2.000000000000000000
           HAlign = haCenter
           Memo.UTF8 = (
-            'Password')
+            'No HP')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -2016,11 +2015,10 @@ object Form6: TForm6
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     FieldAliases.Strings = (
-      'id_user=id_user'
-      'nama_pengguna=nama_pengguna'
-      'username=username'
-      'password=password'
-      'level=level')
+      'id_pelanggan=id_pelanggan'
+      'nama_pelanggan=nama_pelanggan'
+      'no_hp=no_hp'
+      'status=status')
     DataSet = ZQuery5
     BCDToCurrency = False
     Left = 1200
@@ -2028,17 +2026,6 @@ object Form6: TForm6
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
-    Active = True
-    SQL.Strings = (
-      
-        'SELECT tb_penjualan.id_penjualan, tb_penjualan.nama_pelanggan, t' +
-        'b_penjualan.no_telepon, tb_penjualan.tgl_pembelian, tb_penjualan' +
-        '.qty, tb_penjualan.total_harga, tb_produk.kode_barang, tb_produk' +
-        '.nama_barang, tb_produk.keterangan'
-      'FROM tb_produk'
-      
-        'JOIN tb_penjualan ON tb_penjualan.id_penjualan = tb_produk.id_pr' +
-        'oduk;')
     Params = <>
     Left = 312
     Top = 352
@@ -2074,7 +2061,7 @@ object Form6: TForm6
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from tb_user')
+      'select * from tb_pelanggan')
     Params = <>
     Left = 1112
     Top = 352

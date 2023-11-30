@@ -69,7 +69,7 @@ begin
       else
       if DataModule1.ZQuery1.FieldByName('password').AsString <> EdtPassword.Text then
       begin
-        MessageDlg('Usernameaau Password yang anda masukkan salah !',mtWarning,[mbOK],0);
+        MessageDlg('Username Password yang anda masukkan salah !',mtWarning,[mbOK],0);
         EdtUsername.Text:='';
         EdtPassword.Text:='';
         EdtUsername.SetFocus;
@@ -80,7 +80,7 @@ begin
           if DataModule1.ZQuery1.FieldByName('level').AsString='Kasir' then
           begin
               Form1.Show;
-              Form1.btnUser.Enabled:=False;
+              Form1.btnUser.Visible:=False;
               EdtUsername.Text:='';
               EdtPassword.Text:='';
             end

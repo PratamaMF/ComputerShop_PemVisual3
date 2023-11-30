@@ -17,12 +17,13 @@ type
     btnService: TButton;
     btnRakitan: TButton;
     btnProduk: TButton;
-    btnLaporan: TButton;
     btnUser: TButton;
     img1: TImage;
     l_3: TLabel;
     l_4: TLabel;
     l_5: TLabel;
+    btn1: TButton;
+    btn2: TButton;
     procedure btnPenjualanClick(Sender: TObject);
     procedure btnServiceClick(Sender: TObject);
     procedure btnRakitanClick(Sender: TObject);
@@ -30,6 +31,7 @@ type
     procedure btnLaporanClick(Sender: TObject);
     procedure btnUserClick(Sender: TObject);
     procedure btn4Click(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,7 +44,7 @@ var
 implementation
 
 uses PagePenjualan, PageService, PageRakitan, PageProduk, PageLaporan,
-  PageUser;
+  PageUser, PagePelanggan;
 
 {$R *.dfm}
 
@@ -68,7 +70,7 @@ end;
 
 procedure TForm1.btnLaporanClick(Sender: TObject);
 begin
-  Form6.Showmodal;
+  Form10.Showmodal;
 end;
 
 procedure TForm1.btnUserClick(Sender: TObject);
@@ -79,6 +81,11 @@ end;
 procedure TForm1.btn4Click(Sender: TObject);
 begin
   Form1.Close;
+end;
+
+procedure TForm1.btn2Click(Sender: TObject);
+begin
+Form6.ShowModal;
 end;
 
 end.

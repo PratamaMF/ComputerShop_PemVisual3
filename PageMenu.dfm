@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 213
-  Top = 133
+  Left = 155
+  Top = 139
   Width = 1305
   Height = 717
   Align = alClient
@@ -2375,11 +2375,11 @@ object Form1: TForm1
         3C670000000049454E44AE426082}
     end
     object l_3: TLabel
-      Left = 648
+      Left = 672
       Top = 112
-      Width = 435
+      Width = 359
       Height = 29
-      Caption = 'TUGAS AKHIR PEMROGRAMAN VISUAL 3'
+      Caption = 'TUGAS PEMROGRAMAN VISUAL 3'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -24
@@ -2521,24 +2521,9 @@ object Form1: TForm1
         TabOrder = 3
         OnClick = btnProdukClick
       end
-      object btnLaporan: TButton
-        Left = 24
-        Top = 448
-        Width = 217
-        Height = 65
-        Caption = 'LAPORAN'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -19
-        Font.Name = 'Vastago Grotesk SemiBold'
-        Font.Style = [fsBold]
-        ParentFont = False
-        TabOrder = 4
-        OnClick = btnLaporanClick
-      end
       object btnUser: TButton
         Left = 24
-        Top = 528
+        Top = 608
         Width = 217
         Height = 65
         Caption = 'USER'
@@ -2548,8 +2533,38 @@ object Form1: TForm1
         Font.Name = 'Vastago Grotesk SemiBold'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 5
+        TabOrder = 4
         OnClick = btnUserClick
+      end
+      object btn1: TButton
+        Left = 24
+        Top = 448
+        Width = 217
+        Height = 65
+        Caption = 'PELANGGAN'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Vastago Grotesk SemiBold'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 5
+        OnClick = btnLaporanClick
+      end
+      object btn2: TButton
+        Left = 24
+        Top = 528
+        Width = 217
+        Height = 65
+        Caption = 'LAPORAN'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Vastago Grotesk Medium'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 6
+        OnClick = btn2Click
       end
     end
   end
