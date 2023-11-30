@@ -511,7 +511,7 @@ object Form6: TForm6
         end
         object Memo4: TfrxMemoView
           Left = 26.456710000000000000
-          Top = 45.354360000000000000
+          Top = 68.031540000000000000
           Width = 124.724490000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -520,7 +520,7 @@ object Form6: TForm6
         end
         object Memo5: TfrxMemoView
           Left = 26.456710000000000000
-          Top = 15.118120000000000000
+          Top = 37.795300000000000000
           Width = 124.724490000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -547,7 +547,7 @@ object Form6: TForm6
         end
         object Memo7: TfrxMemoView
           Left = 26.456710000000000000
-          Top = 71.811070000000000000
+          Top = 94.488250000000000000
           Width = 124.724490000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -592,7 +592,7 @@ object Form6: TForm6
         end
         object Memo13: TfrxMemoView
           Left = 162.519790000000000000
-          Top = 15.118120000000000000
+          Top = 37.795300000000000000
           Width = 15.118120000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -609,7 +609,7 @@ object Form6: TForm6
         end
         object Memo14: TfrxMemoView
           Left = 162.519790000000000000
-          Top = 45.354360000000000000
+          Top = 68.031540000000000000
           Width = 15.118120000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -626,7 +626,7 @@ object Form6: TForm6
         end
         object Memo15: TfrxMemoView
           Left = 162.519790000000000000
-          Top = 71.811070000000000000
+          Top = 94.488250000000000000
           Width = 15.118120000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -643,7 +643,7 @@ object Form6: TForm6
         end
         object frxDBDataset1nama_pelanggan: TfrxMemoView
           Left = 188.976500000000000000
-          Top = 15.118120000000000000
+          Top = 37.795300000000000000
           Width = 238.110390000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -662,7 +662,7 @@ object Form6: TForm6
         end
         object frxDBDataset1no_telepon: TfrxMemoView
           Left = 188.976500000000000000
-          Top = 45.354360000000000000
+          Top = 68.031540000000000000
           Width = 238.110390000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -680,7 +680,7 @@ object Form6: TForm6
         end
         object frxDBDataset1tgl_pembelian: TfrxMemoView
           Left = 188.976500000000000000
-          Top = 71.811070000000000000
+          Top = 94.488250000000000000
           Width = 238.110390000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -715,6 +715,24 @@ object Form6: TForm6
           ParentFont = False
           VAlign = vaCenter
         end
+        object frxDBDataset1id_penjualan: TfrxMemoView
+          Left = 26.456710000000000000
+          Top = 7.559060000000000000
+          Width = 79.370130000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'id_penjualan'
+          DataSet = frxDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8 = (
+            '[frxDBDataset1."id_penjualan"]')
+          ParentFont = False
+        end
       end
     end
   end
@@ -727,7 +745,7 @@ object Form6: TForm6
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45190.980018703700000000
-    ReportOptions.LastChange = 45191.593242488420000000
+    ReportOptions.LastChange = 45191.593242488400000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -801,8 +819,8 @@ object Form6: TForm6
         DataSetName = 'frxDBDataset1'
         RowCount = 0
         object Memo9: TfrxMemoView
-          Left = 204.094620000000000000
-          Width = 215.433210000000000000
+          Left = 222.992270000000000000
+          Width = 204.094620000000000000
           Height = 22.677180000000000000
           ShowHint = False
           DataField = 'kelengkapan'
@@ -821,8 +839,8 @@ object Form6: TForm6
           VAlign = vaCenter
         end
         object Memo10: TfrxMemoView
-          Left = 26.456710000000000000
-          Width = 177.637910000000000000
+          Left = 52.913420000000000000
+          Width = 170.078850000000000000
           Height = 22.677180000000000000
           ShowHint = False
           DataField = 'nama_barang'
@@ -841,7 +859,7 @@ object Form6: TForm6
           VAlign = vaCenter
         end
         object Memo11: TfrxMemoView
-          Left = 419.527830000000000000
+          Left = 427.086890000000000000
           Width = 151.181200000000000000
           Height = 22.677180000000000000
           ShowHint = False
@@ -861,8 +879,8 @@ object Form6: TForm6
           VAlign = vaCenter
         end
         object Memo12: TfrxMemoView
-          Left = 570.709030000000000000
-          Width = 120.944960000000000000
+          Left = 578.268090000000000000
+          Width = 113.385900000000000000
           Height = 22.677180000000000000
           ShowHint = False
           DataField = 'status'
@@ -887,6 +905,23 @@ object Form6: TForm6
           ShowHint = False
           Frame.Typ = [ftTop]
         end
+        object Memo20: TfrxMemoView
+          Left = 22.677180000000000000
+          Width = 30.236240000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            '[line]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
       end
       object GroupHeader1: TfrxGroupHeader
         Height = 200.315090000000000000
@@ -894,9 +929,9 @@ object Form6: TForm6
         Width = 718.110700000000000000
         Condition = 'frxDBDataset1."id_service"'
         object Memo2: TfrxMemoView
-          Left = 204.094620000000000000
+          Left = 222.992270000000000000
           Top = 177.637910000000000000
-          Width = 215.433210000000000000
+          Width = 204.094620000000000000
           Height = 22.677180000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -913,7 +948,7 @@ object Form6: TForm6
         end
         object Memo4: TfrxMemoView
           Left = 26.456710000000000000
-          Top = 45.354360000000000000
+          Top = 68.031540000000000000
           Width = 124.724490000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -922,7 +957,7 @@ object Form6: TForm6
         end
         object Memo5: TfrxMemoView
           Left = 26.456710000000000000
-          Top = 15.118120000000000000
+          Top = 37.795300000000000000
           Width = 124.724490000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -930,9 +965,9 @@ object Form6: TForm6
             'Nama Pelanggan')
         end
         object Memo6: TfrxMemoView
-          Left = 26.456710000000000000
+          Left = 52.913420000000000000
           Top = 177.637910000000000000
-          Width = 177.637910000000000000
+          Width = 170.078850000000000000
           Height = 22.677180000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -949,7 +984,7 @@ object Form6: TForm6
         end
         object Memo7: TfrxMemoView
           Left = 26.456710000000000000
-          Top = 71.811070000000000000
+          Top = 94.488250000000000000
           Width = 124.724490000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -957,9 +992,9 @@ object Form6: TForm6
             'Tanggal Pembelian')
         end
         object Memo3: TfrxMemoView
-          Left = 419.527830000000000000
+          Left = 427.086890000000000000
           Top = 177.637910000000000000
-          Width = 151.181200000000000000
+          Width = 143.622140000000000000
           Height = 22.677180000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -994,7 +1029,7 @@ object Form6: TForm6
         end
         object Memo13: TfrxMemoView
           Left = 162.519790000000000000
-          Top = 15.118120000000000000
+          Top = 37.795300000000000000
           Width = 15.118120000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -1011,7 +1046,7 @@ object Form6: TForm6
         end
         object Memo14: TfrxMemoView
           Left = 162.519790000000000000
-          Top = 45.354360000000000000
+          Top = 68.031540000000000000
           Width = 15.118120000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -1028,7 +1063,7 @@ object Form6: TForm6
         end
         object Memo15: TfrxMemoView
           Left = 162.519790000000000000
-          Top = 71.811070000000000000
+          Top = 94.488250000000000000
           Width = 15.118120000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -1045,7 +1080,7 @@ object Form6: TForm6
         end
         object frxDBDataset1nama_pelanggan: TfrxMemoView
           Left = 188.976500000000000000
-          Top = 15.118120000000000000
+          Top = 37.795300000000000000
           Width = 238.110390000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -1057,19 +1092,18 @@ object Form6: TForm6
         end
         object frxDBDataset1telp: TfrxMemoView
           Left = 188.976500000000000000
-          Top = 45.354360000000000000
+          Top = 68.031540000000000000
           Width = 238.110390000000000000
           Height = 18.897650000000000000
           ShowHint = False
-          DataField = 'telp'
           DataSet = frxDataset2
           DataSetName = 'frxDBDataset1'
           Memo.UTF8 = (
-            '[frxDBDataset1."telp"]')
+            '[frxDBDataset1."no_hp"]')
         end
         object frxDBDataset1tgl_service: TfrxMemoView
           Left = 188.976500000000000000
-          Top = 71.811070000000000000
+          Top = 94.488250000000000000
           Width = 238.110390000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -1081,7 +1115,7 @@ object Form6: TForm6
         end
         object Memo16: TfrxMemoView
           Left = 26.456710000000000000
-          Top = 98.267780000000000000
+          Top = 120.944960000000000000
           Width = 124.724490000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -1090,7 +1124,7 @@ object Form6: TForm6
         end
         object Memo17: TfrxMemoView
           Left = 162.519790000000000000
-          Top = 98.267780000000000000
+          Top = 120.944960000000000000
           Width = 15.118120000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -1107,7 +1141,7 @@ object Form6: TForm6
         end
         object frxDBDataset1keluhan: TfrxMemoView
           Left = 188.976500000000000000
-          Top = 98.267780000000000000
+          Top = 120.944960000000000000
           Width = 510.236550000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -1116,6 +1150,42 @@ object Form6: TForm6
           DataSetName = 'frxDBDataset1'
           Memo.UTF8 = (
             '[frxDBDataset1."keluhan"]')
+        end
+        object Memo19: TfrxMemoView
+          Left = 22.677180000000000000
+          Top = 177.637910000000000000
+          Width = 30.236240000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          HAlign = haCenter
+          Memo.UTF8 = (
+            'No')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1id_service: TfrxMemoView
+          Left = 26.456710000000000000
+          Top = 3.779530000000000000
+          Width = 79.370130000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'id_service'
+          DataSet = frxDataset2
+          DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8 = (
+            '[frxDBDataset1."id_service"]')
+          ParentFont = False
         end
       end
     end
@@ -2007,14 +2077,17 @@ object Form6: TForm6
     CloseDataSource = False
     FieldAliases.Strings = (
       'id_service=id_service'
-      'nama_pelanggan=nama_pelanggan'
-      'telp=telp'
       'tgl_service=tgl_service'
       'nama_barang=nama_barang'
       'kelengkapan=kelengkapan'
       'keluhan=keluhan'
       'harga_service=harga_service'
-      'status=status')
+      'status=status'
+      'id_pelanggan=id_pelanggan'
+      'id_pelanggan_1=id_pelanggan_1'
+      'nama_pelanggan=nama_pelanggan'
+      'no_hp=no_hp'
+      'status_1=status_1')
     DataSet = ZQuery2
     BCDToCurrency = False
     Left = 600
@@ -2081,7 +2154,9 @@ object Form6: TForm6
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from tb_service')
+      
+        'SELECT tb_service.*, tb_pelanggan.* FROM tb_service JOIN tb_pela' +
+        'nggan ON tb_service.id_pelanggan=tb_pelanggan.id_pelanggan')
     Params = <>
     Left = 512
     Top = 352
