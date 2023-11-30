@@ -32,7 +32,7 @@ var
 implementation
 
 uses
-  DModule, PageMenu;
+  DModule, PageMenu, PagePelanggan, PageSignIn;
 
 {$R *.dfm}
 
@@ -60,19 +60,19 @@ begin
 
       if DataModule1.ZQuery1.RecordCount = 0 then
       begin
-        MessageDlg('Username dan Password Harus Di isi!',mtInformation,[mbOK],0);
+        MessageDlg('Username dan Password anda Belum terdaftar, Silahkan daftar terlebih dahulu !',mtInformation,[mbOK],0);
         EdtUsername.Text:='';
         EdtPassword.Text:='';
         EdtUsername.SetFocus;
-        Close;
       end
       else
       if DataModule1.ZQuery1.FieldByName('password').AsString <> EdtPassword.Text then
       begin
-        MessageDlg('Username Password yang anda masukkan salah !',mtWarning,[mbOK],0);
+        MessageDlg('Username dan Password anda Belum terdaftar, Silahkan daftar terlebih dahulu !',mtWarning,[mbOK],0);
         EdtUsername.Text:='';
         EdtPassword.Text:='';
         EdtUsername.SetFocus;
+        Form9.ShowModal;
       end
       else
       begin
@@ -103,7 +103,7 @@ end;
 
 procedure TForm9.btn2Click(Sender: TObject);
 begin
- Close;
+  Form11.showmodal;
 end;
 
 end.

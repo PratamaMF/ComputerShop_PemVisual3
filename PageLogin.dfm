@@ -1,6 +1,6 @@
 object Form9: TForm9
-  Left = 281
-  Top = 198
+  Left = 224
+  Top = 162
   Width = 1005
   Height = 470
   Caption = 'Form Login'
@@ -103,6 +103,7 @@ object Form9: TForm9
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
+        PasswordChar = '*'
         TabOrder = 1
       end
       object btn1: TButton
@@ -110,7 +111,7 @@ object Form9: TForm9
         Top = 192
         Width = 177
         Height = 49
-        Caption = 'LOGIN'
+        Caption = 'MASUK'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clMoneyGreen
         Font.Height = -16
@@ -125,7 +126,7 @@ object Form9: TForm9
         Top = 192
         Width = 177
         Height = 49
-        Caption = 'CANCEL'
+        Caption = 'DAFTAR'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clMoneyGreen
         Font.Height = -16

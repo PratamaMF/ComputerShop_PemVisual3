@@ -12,14 +12,15 @@ uses
   DModule in 'DModule.pas' {DataModule1: TDataModule},
   PageAddSpesifikasi in 'PageAddSpesifikasi.pas' {Form8},
   PageLogin in 'PageLogin.pas' {Form9},
-  PagePelanggan in 'PagePelanggan.pas' {Form10};
+  PagePelanggan in 'PagePelanggan.pas' {Form10},
+  PageSignIn in 'PageSignIn.pas' {Form11};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TForm9, Form9);
+  Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TForm2, Form2);
   Application.CreateForm(TForm3, Form3);
   Application.CreateForm(TForm4, Form4);
@@ -29,5 +30,6 @@ begin
   Application.CreateForm(TDataModule1, DataModule1);
   Application.CreateForm(TForm8, Form8);
   Application.CreateForm(TForm10, Form10);
+  Application.CreateForm(TForm11, Form11);
   Application.Run;
 end.
