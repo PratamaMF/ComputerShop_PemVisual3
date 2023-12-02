@@ -1,6 +1,6 @@
 object Form9: TForm9
-  Left = 224
-  Top = 162
+  Left = 444
+  Top = 209
   Width = 1005
   Height = 470
   Caption = 'Form Login'
@@ -67,7 +67,7 @@ object Form9: TForm9
         ParentFont = False
       end
       object l_4: TLabel
-        Left = 248
+        Left = 256
         Top = 136
         Width = 83
         Height = 19
